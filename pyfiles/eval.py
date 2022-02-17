@@ -9,6 +9,18 @@ import numpy as np
 
 def eval_one_epoch(loader, model, criteria, device, num_batches):
     """
+    PARAMETER:
+    ---------
+    loader: torch.utils.data.DataLoader
+             It is the dataloader for the specified split (train, val, test) 
+    
+    model: nn.Module
+            It is the model that is established before hand in the model.py 
+    
+    criteria: Loss Function 
+                In this case the loss function is the AdamW which is the default one for a pre-trained BERT model. 
+
+    
     """
     # we train model 
     model = model.train()

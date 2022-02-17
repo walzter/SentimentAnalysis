@@ -29,4 +29,7 @@ class BertFeels(nn.Module):
         # pass it through the dropout
         out = self.dropout(pool_out)
         # return the linear classification 
-        return self.output(out)
+        return self.output(out
+                )
+
+

@@ -46,6 +46,7 @@ def train_model(model,train_loader,val_loader, optimizer, scheduler, criteria, e
     #wandb.log({"train_loss":train_loss})
     #wandb.log({"val_acc":val_acc})
     #wandb.log({"val_loss":val_loss})
+    # keeping track of the better modeear
     if val_acc > best_accuracy:
         best_accuracy = val_acc
         if save_model:
